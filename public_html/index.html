@@ -4,24 +4,28 @@
         <title>Menú Paraguay</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <style>
+            h1 {color: rgb(250, 42, 0);
+                font-family: monospace;
+            }
+            h2 {color: rgb(0, 50, 250);}
+            body {background-color: rgb(235, 235, 255);}
+            .ingredientes {background-color: rgb(250, 152, 152);}
+            #queso {background-color: rgb(255, 8, 229);}
+        </style>
     </head>
     <body>
-        <div class="grid-container">
-            <h3>Esto es un Grid header</h3>
-        </div>
         <h1>Comidas típicas del Paraguay</h1>
         <h2><u>Mbeju</u></h2>
         <p>Un platillo típico hecho a base de <strong>almidón</strong></p>
         <h3><i>Ingredientes</i></h3>
-        <ul>
+        <ul class="ingredientes">
             <li>500gr de Almidón de Mandioca</li>
-            <li>250gr de Queso Curado o Queso Paraguay</li>
+            <li id="queso">250gr de Queso Curado o Queso Paraguay</li>
             <li>250gr de Margarina o grasa de cerdo</li>
             <li>1 Cucharada sopera de sal</li>
         </ul>
         <h3><i>Procedimientos:</i></h3>
-        <div class="header">
             <ol>
             <li>Colocar el almidón en una fuenta junto con la sal</li>
             <li>Añadir el queso e ir mezclando preferentemente con las manos</li>
@@ -31,9 +35,5 @@
             <li>Cocinar hasta que se doren ambos lados</li>
             <li><strong>A disfrutar</strong></li>
         </ol>
-        </div>
-        <div class="container">
-            <h2>Esto es un contenedor</h2>
-        </div>
     </body>
 </html>
