@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-        <title>Menú Paraguay</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            h1 {color: rgb(250, 42, 0);
-                font-family: monospace;
-            }
-            h2 {color: rgb(0, 50, 250);}
-            body {background-color: rgb(235, 235, 255);}
-            .ingredientes {background-color: rgb(250, 152, 152);}
-            #queso {background-color: rgb(255, 8, 229);}
-        </style>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Ejercicio Unidad 6</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_formulario.css">
     </head>
     <body>
-        <h1>Comidas típicas del Paraguay</h1>
-        <a href="index_1.html">Ir a página de prueba MITIC</a>
-        <h2><u>Mbeju</u></h2>
-        <p>Un platillo típico hecho a base de <strong>almidón</strong></p>
-        <h3><i>Ingredientes</i></h3>
-        <ul class="ingredientes">
-            <li>500gr de Almidón de Mandioca</li>
-            <li id="queso">250gr de Queso Curado o Queso Paraguay</li>
-            <li>250gr de Margarina o grasa de cerdo</li>
-            <li>1 Cucharada sopera de sal</li>
-        </ul>
-        <h3><i>Procedimientos:</i></h3>
-            <ol>
-            <li>Colocar el almidón en una fuenta junto con la sal</li>
-            <li>Añadir el queso e ir mezclando preferentemente con las manos</li>
-            <li>Agregar la grasa y amasar hasta obtener una masa arenosa que al aplastar con las manos se forme una masa</li>
-            <li>Engrasa una sartén y colocar a fuego medio hasta que caliente</li>
-            <li>Colocar la masa y aplastar con una cuchara</li>
-            <li>Cocinar hasta que se doren ambos lados</li>
-            <li><strong>A disfrutar</strong></li>
-        </ol>
+        <header class="header">
+            <h1>Bienvenido a mi ejercicio de la Unidad 6</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="home">
+                <h2>Inicio</h2>
+                <p>Este es el contenido de la página principal.</p>
+            </section>
+            <section id="about">
+                <h2>Sobre mí</h2>
+                <p>Mi nombre es Martín Reyes y este es el ejercicio de la Unidad 6.</p>
+            </section>
+            <section id="contact">
+                <div class="formulario">
+                    <h2>Formulario de Contacto</h2>
+                    <form id="contactForm">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Correo Electr&oacute;nico:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                    <p id="errorMessage" style="color: red;"></p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>© 2026 Mi Página Web - Ejercicio 6</p>
+        </footer>
     </body>
 </html>

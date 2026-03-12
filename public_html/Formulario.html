@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Formulario con validación</title>
+        <link rel="stylesheet" href="style_formulario.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Formulario de Contacto</h1>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electr&oacute;nico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+            <p id="errorMessage" style="color: red;"></p>
+        </div>
+    </body>
+</html>
